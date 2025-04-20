@@ -4,7 +4,7 @@ This project explores predicting the price of a bottle of wine using both its te
 
 ## Goal
 
-The primary goal is to build a model that leverages both text patterns in wine reviews and numerical data (like points awarded) to predict the wine's price more accurately than using text alone.
+The primary goal is to build a model that leverages both text patterns in wine reviews and numerical data (like points awarded) and categorical features (like region) to predict the wine's price more accurately than using text alone.
 
 ## Dataset
 
@@ -29,8 +29,10 @@ Key columns used:
     *   Sequences were padded to a fixed length (`maxlen=60`) for uniform model input.
 *   **Numerical Feature Processing:**
     *   The `points` column was selected as the numerical input.
-    *   *Note: In this specific notebook version, no scaling was applied to the 'points' feature, but scaling (like StandardScaler) is often recommended for numerical inputs in neural networks.*
-
+    *   The `RobustScaler` was used to scale the numerical features.
+*   **Categorical Feature Processing:**
+    *  The `region` is one hot encoded as used as another input.
+      
 ### 2. Model Architecture (Combined)
 
 A multi-input neural network model was built using the Keras Functional API to handle both text and numerical data:
