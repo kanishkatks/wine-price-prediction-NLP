@@ -2,7 +2,7 @@
 
 ## Project Goal
 
-This project aims to predict the price of a wine bottle using its description and numerical features like points and region. We want to build a model that can provide an estimate of a wine's price based on textual and categorical data.
+This project aims to predict the price of a wine bottle using its description and numerical features like points and region. We want to build a model that can provide an estimate of a wine's price based on textual and numerical data.
 
 ## Methods
 
