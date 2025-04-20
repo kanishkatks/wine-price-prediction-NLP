@@ -29,7 +29,7 @@ Key columns used:
     *   Sequences were padded to a fixed length (`maxlen=60`) for uniform model input.
 *   **Numerical Feature Processing:**
     *   The `points` column was selected as the numerical input.
-    *   The `RobustScaler` was used to scale the numerical features.
+    *   The `StandardScaler` was used to scale the numerical features.
 *   **Categorical Feature Processing:**
     *  The `region` is one hot encoded as used as another input.
       
